@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+
+publish_mode: editorial_workflow
+media_folder: 'static/images/uploads'
+public_folder: '/images/uploads'
+
+collections:
+  - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: 'content/settings/global.yml'
+        name: 'globalSettings'
+        label: 'Global Settings'
+        fields:
+          - { label: 'Site Title', name: 'name', widget: 'string' }
+          - { label: 'Site Logo', name: 'logo', widget: 'image' }

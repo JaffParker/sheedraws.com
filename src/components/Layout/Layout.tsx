@@ -27,6 +27,7 @@ export const Layout: SFC = ({ children }) => (
       <Fragment>
         <Helmet>
           <title>{name}</title>
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
         <div className="container pt-6">
           <Header />

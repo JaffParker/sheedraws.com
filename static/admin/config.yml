@@ -6,6 +6,13 @@ media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
 
 collections:
+  - name: 'tags'
+    label: 'Tags'
+    folder: 'content/tags'
+    fields:
+      - { label: 'Type', name: 'type', default: 'tag', widget: 'hidden' }
+      - { label: 'Name', name: 'name', widget: 'string' }
+
   - name: 'settings'
     label: 'Settings'
     delete: false

@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 const GetLogo = graphql`
   query GetLogo {
-    file(relativePath: { eq: "uploads/sheedraws_logo.jpg" }) {
+    file(relativePath: { eq: "uploads/logo.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 320) {
           ...GatsbyImageSharpFluid
